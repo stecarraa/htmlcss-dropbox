@@ -2,13 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
+h1{
+text-align: center;
+font-size: 80px;
+padding: 20px;
+padding-top: 90px;
+}
 
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    height: 70px;
 }
 
 #logo{
@@ -20,7 +32,7 @@ ul.menu {
     list-style: none;
 }
 ul.menu li {
-    background-color: white;
+    
     display: block;
     margin: 2px;
     float: left;
@@ -32,6 +44,7 @@ ul.menu li a {
     text-decoration: none;
     text-align: center;
 }
+
 ul.menu li:hover {
     border-bottom: 2px solid black;
 }
@@ -39,4 +52,37 @@ ul.menu li:hover {
 #goto{
     background-color: rgb(69, 121, 213);
     color: white;
+}
+
+.big-container{
+    background-color: aquamarine;
+    padding: 40px;
+
+}
+    
+
+.start{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.flex-item{
+
+    display: flex;
+}
+
+.small{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.large{
+    flex-grow: 2;
+}
+
+
+img{
+    height: 300px;
 }
