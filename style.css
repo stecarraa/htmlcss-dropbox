@@ -13,7 +13,7 @@ padding-top: 90px;
 }
 
 h2{
-    text-align: center;
+    text-align: left;
     margin-top: 100px;
 
 }
@@ -44,7 +44,7 @@ ul.menu li {
     float: left;
     padding: 20px;
 }
-ul.menu li a {
+ul.menu li .a-menu {
     color: black;
     display: block;
     text-decoration: none;
@@ -116,6 +116,13 @@ ul.menu li:hover {
     height: 400px;
 }
 
+.card-img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
 .w-3{
     width: calc(100%/ 3 - 10px - 10px);
 }
@@ -138,3 +145,8 @@ ul.menu li:hover {
     padding: 20px;
     margin: 10px;
 }
+
+
+
+
+
