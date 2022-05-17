@@ -70,11 +70,12 @@ ul.menu li:hover {
 .small-container{
     width: 60%;
     margin: 0 auto;
+    margin-top: 50px;
 }
     
 
 .start{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     height: 250px;
 }
@@ -94,8 +95,12 @@ ul.menu li:hover {
 .small{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    padding: 30px;
     flex-grow: 1;
+}
+
+.content{
+    margin-top: 30px;
 }
 
 .large{
@@ -103,7 +108,11 @@ ul.menu li:hover {
 }
 
 
-img{
+.jumbo{
+    height: 400px;
+}
+
+.partner{
     height: 400px;
 }
 
