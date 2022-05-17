@@ -12,6 +12,12 @@ padding: 20px;
 padding-top: 90px;
 }
 
+h2{
+    text-align: center;
+    margin-top: 100px;
+
+}
+/* menu iniziale nell'header */
 header{
     display: flex;
     align-items: center;
@@ -53,22 +59,36 @@ ul.menu li:hover {
     background-color: rgb(69, 121, 213);
     color: white;
 }
-
+/* prima sezione forse conviene mettere il testo in float e l'immagine in absolute prova */
 .big-container{
-    background-color: aquamarine;
+    background-color: rgb(145,205,255);
     padding: 40px;
+    height: 670px;
 
+}
+
+.small-container{
+    width: 60%;
+    margin: 0 auto;
 }
     
 
 .start{
     width: 70%;
     margin: 0 auto;
+    height: 250px;
 }
 
-.flex-item{
-
+.flex-container{
     display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-between{
+    justify-content: space-between;
 }
 
 .small{
@@ -84,5 +104,28 @@ ul.menu li:hover {
 
 
 img{
-    height: 300px;
+    height: 400px;
+}
+
+.w-3{
+    width: calc(100%/ 3 - 10px - 10px);
+}
+
+.w-100{
+    width: 100%;
+}
+
+.vertical-box{
+    border: 2px solid grey;
+    height: 600px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.horizontal-box{
+    border: 2px solid grey;
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
 }
