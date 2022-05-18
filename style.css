@@ -2,20 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
 h1{
 text-align: center;
 font-size: 80px;
-padding: 20px;
-padding-top: 90px;
+padding-bottom: 15px;
+padding-top: 50px;
 }
 
 h2{
     text-align: left;
     margin-top: 100px;
     margin-bottom: 20px;
+    font-size: 40px;
 
 }
 
@@ -35,9 +37,12 @@ header{
 }
 
 #logo{
-    font-size: 20px;
+    height: 18px;
 }
 
+#anchor{
+    font-size: 45px;
+}
 ul.menu {
     font-size: 15px;
     list-style: none;
@@ -60,15 +65,17 @@ ul.menu li:hover {
     border-bottom: 2px solid black;
 }
 
-#goto{
-    background-color: rgb(69, 121, 213);
+.goto{
+    background-color:rgb(20,83,246);
     color: white;
+    padding: 8px;
+    text-decoration:none ;
 }
 /* prima sezione forse conviene mettere il testo in float e l'immagine in absolute prova */
 .big-container{
     background-color: rgb(145,205,255);
     padding: 40px;
-    height: 670px;
+    height: 690px;
 
 }
 
@@ -78,7 +85,10 @@ ul.menu li:hover {
     margin-top: 50px;
 }
     
-
+.short{
+    width: 20%;
+    margin: 30px;
+}
 .start{
     width: 80%;
     margin: 0 auto;
@@ -170,18 +180,39 @@ ul.menu li:hover {
 
 
 .vertical-box{
-    border: 2px solid grey;
-    height: 600px;
-    padding: 20px;
+    border: 2px solid rgb(215, 213, 213);
+    height: 800px;
     margin: 10px;
 }
 
 .horizontal-box{
-    border: 2px solid grey;
+    border: 2px solid rgb(215, 213, 213);
     height: 200px;
     width: 100%;
-    padding: 20px;
     margin: 10px;
+}
+
+.whom{
+    text-align: center;
+    padding: 10px;
+}
+
+.info{
+    padding: 10px;
+    margin-left: 18px;
+}
+
+.btn .goto{
+    text-align: center;
+}
+
+.fa-ul{
+    margin-top: 20px;
+}
+
+.fa-ul>li{
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -245,5 +276,48 @@ ul.menu li:hover {
 }
 
 
+footer{
+    margin-top: 100px;
+    background-color: black;
+    height: 400px;
+}
+.info-footer a{
+    text-decoration: none;
+}
 
 
+ul.footer-menu{
+    font-size: 15px;
+    list-style: none;
+}
+ul.footer-menu li {
+    
+    display: block;
+    padding: 10px;
+    
+   
+}
+
+ul.footer-menu li .info-footer {
+    color:white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 0;
+}
+
+h4{
+    color: white;
+}
+
+
+
+
+
+
+
+/* .list-icon::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 5px;
+} */
