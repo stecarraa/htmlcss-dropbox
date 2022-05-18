@@ -71,6 +71,21 @@ ul.menu li:hover {
     padding: 8px;
     text-decoration:none ;
 }
+
+.btn .goto{
+    text-align: center;
+    margin-top: 20px;
+}
+.btn-info{
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#partner{
+    color: black;
+    background-color: white;
+    border: 2px solid lightgrey;
+}
 /* prima sezione forse conviene mettere il testo in float e l'immagine in absolute prova */
 .big-container{
     background-color: rgb(145,205,255);
@@ -87,14 +102,15 @@ ul.menu li:hover {
     
 .short{
     width: 20%;
-    margin: 30px;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 .start{
     width: 80%;
     margin: 0 auto;
     height: 250px;
 }
-
+/* proprietà flex */
 .flex-container{
     display: flex;
 }
@@ -131,7 +147,7 @@ ul.menu li:hover {
     height: 400px;
 }
 
-.partner{
+.partner-img{
     height: 400px;
 }
 
@@ -141,8 +157,11 @@ ul.menu li:hover {
 	width: 100%;
 	height: auto;
 }
-
+.fa-check{
+    color: blue;
+}
 .sponsor-img {
+    filter: grayscale(1) invert(1);
 	display: block;
 	border: 0;
 	margin: 0 auto;
@@ -151,6 +170,10 @@ ul.menu li:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#sponsor-img{
+width: 60%;
 }
 
 .w-3{
@@ -181,7 +204,7 @@ ul.menu li:hover {
 
 .vertical-box{
     border: 2px solid rgb(215, 213, 213);
-    height: 800px;
+    height: 900px;
     margin: 10px;
 }
 
@@ -199,12 +222,10 @@ ul.menu li:hover {
 
 .info{
     padding: 10px;
-    margin-left: 18px;
+   
 }
 
-.btn .goto{
-    text-align: center;
-}
+
 
 .fa-ul{
     margin-top: 20px;
@@ -218,7 +239,6 @@ ul.menu li:hover {
 
 .small-square{
     background-color: white;
-    border: 1px solid black;
     display: block;
     width: 50%;
     height:50%;
@@ -233,10 +253,43 @@ ul.menu li:hover {
 .center-square{
     height: calc(100vw / 3);
     background-color: beige;
+    padding: 30px;
+}
+
+#wbr{
+    background-color: aquamarine;
+}
+
+#hrst{
+    background-color: lightblue;
+}
+
+#plnt{
+    background-color: red;
+}
+
+#clr{
+    background-color: lightseagreen;
+}
+
+#dsgn{
+    background-color: blue;
+}
+
+#arzn{
+    background-color: brown;
+}
+
+#flrd{
+    background-color: orange;
+}
+
+#tpp{
+    background-color: lightcoral;
 }
 
 .bg-azure{
-    background-color: aquamarine;
+    background-color: lightblue;
     height: 200px;
 }
 
@@ -302,12 +355,15 @@ ul.footer-menu li .info-footer {
     color:white;
     display: block;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
     margin-left: 0;
 }
 
 h4{
     color: white;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 35px;
 }
 
 
