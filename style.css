@@ -8,9 +8,11 @@
 
 h1{
 text-align: center;
-font-size: 80px;
+font-size: 70px;
 padding-bottom: 15px;
 padding-top: 50px;
+width: 80%;
+margin: 0 auto;
 }
 
 h2{
@@ -24,9 +26,13 @@ h2{
 h3{
 margin-bottom: 15px;
 }
+a{
+    display: block;
+}
+
 /* menu iniziale nell'header */
 header{
-    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     position: fixed;
@@ -35,23 +41,47 @@ header{
     background-color: white;
     height: 70px;
 }
-
+#start{
+    color: white;
+}
 #logo{
     height: 18px;
 }
-
+#now{
+    display: inline;
+}
 #anchor{
     font-size: 45px;
 }
+
+#checked{
+    vertical-align: middle;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 4px solid black;
+    border-color: #0061ff;
+}
+
+#not-checked{
+    vertical-align: middle;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    
+}
+
 ul.menu {
     font-size: 15px;
     list-style: none;
+    display: flex;
+    align-items: baseline;
 }
-ul.menu li {
-    
-    display: block;
+ul.menu li { 
     margin: 2px;
-    float: left;
     padding: 20px;
 }
 ul.menu li .a-menu {
@@ -75,29 +105,32 @@ ul.menu li:hover {
 .btn .goto{
     text-align: center;
     margin-top: 20px;
+    text-align: center;
 }
 .btn-info{
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 #partner{
     color: black;
     background-color: white;
     border: 2px solid lightgrey;
+    width: 50%;
 }
 /* prima sezione forse conviene mettere il testo in float e l'immagine in absolute prova */
 .big-container{
-    background-color: rgb(145,205,255);
+    background-color: lightblue;
     padding: 40px;
-    height: 690px;
-
 }
 
 .small-container{
     width: 60%;
     margin: 0 auto;
     margin-top: 50px;
+    max-width: 1000px;
+
 }
     
 .short{
@@ -108,11 +141,14 @@ ul.menu li:hover {
 .start{
     width: 80%;
     margin: 0 auto;
-    height: 250px;
+    position: relative;
+    bottom: -70px;
 }
+
 /* proprietà flex */
 .flex-container{
     display: flex;
+    
 }
 
 .flex-wrap{
@@ -132,10 +168,11 @@ ul.menu li:hover {
     flex-direction: column;
     padding: 30px;
     flex-grow: 1;
+    justify-content: space-between;
 }
 
 .content{
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .large{
@@ -143,7 +180,7 @@ ul.menu li:hover {
 }
 
 
-.jumbo{
+.jumbo-img{
     height: 400px;
 }
 
@@ -187,6 +224,7 @@ width: 60%;
 
 
 
+
 .w-2{
     width: calc(100%/ 2 - 10px - 10px);
 }
@@ -201,11 +239,17 @@ width: 60%;
     margin: 0 auto;
 }
 
+.w-50{
+    width: 50%;
+}
+
 
 .vertical-box{
     border: 2px solid rgb(215, 213, 213);
     height: 900px;
     margin: 10px;
+    max-width: 1000px;
+
 }
 
 .horizontal-box{
@@ -213,6 +257,8 @@ width: 60%;
     height: 200px;
     width: 100%;
     margin: 10px;
+    max-width: 1000px;
+
 }
 
 .whom{
@@ -243,9 +289,18 @@ width: 60%;
     width: 50%;
     height:50%;
     position: relative;
+    max-width: 1000px;
+
+}
+
+.small-square:hover{
+    display: block;
+    border: 10px solid lightgray;
 }
 .side-box{
     height: calc(100vw / 3);
+    max-width: 1000px;
+
 
    
 }
@@ -254,6 +309,9 @@ width: 60%;
     height: calc(100vw / 3);
     background-color: beige;
     padding: 30px;
+    max-width: 1000px;
+    
+
 }
 
 #wbr{
@@ -333,6 +391,8 @@ footer{
     margin-top: 100px;
     background-color: black;
     height: 400px;
+    
+
 }
 .info-footer a{
     text-decoration: none;

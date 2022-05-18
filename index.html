@@ -12,13 +12,17 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
     <!-- header con menu in fixed -->
-    <header>
+    <header class="flex-container">
         <div>
             <ul class="menu">
                 <li><img id="logo" src="img/logo-small.png" alt=""></li>
@@ -33,7 +37,7 @@
                 <li><a class="a-menu" href="#">Supporto</a></li>
                 <li><a class="a-menu" href="#">Contatta l'ufficio vendite</a></li>
                 <li><a class="a-menu" href="#">Accedi</a></li>
-                <li><a class="a-menu btn goto" href="#">Inizia</a></li>
+                <li><a id="start" class="a-menu btn goto" href="#">Inizia</a></li>
             </ul>
         </div>
     </header>
@@ -47,34 +51,39 @@
 
         <div class="flex-container start">
             <div class="small">
-
-                <!-- <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe reprehenderit perferendis
-                        ipsum enim blanditiis ipsam ex reiciendis officiis minus, iusto corrupti iure quae voluptatibus tempora
-                        nihil quis omnis eveniet!</li>
-                    <li><a id="goto" href="#">inizia la tua pprova gratuita</a></li>
-                    <li>Annulla in qualsiasi momento</li>
-                </ul> -->
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe reprehenderit perferendis
                 ipsum enim blanditiis ipsam ex reiciendis officiis minus, iusto corrupti iure quae voluptatibus tempora
                 nihil quis omnis eveniet!
 
-                <div class="content"><a class="goto" href="#">inizia la tua pprova gratuita</a></div>
+                <div class="content w-50"><a class="goto btn" href="#">Inizia la tua prova gratuita</a></div>
 
                 <div class="content">Annulla in qualsiasi momento</div>
 
                 <div class="content"><a href="#plain"> <i id="anchor" class="fa-solid fa-arrow-down"></i></a></div>
 
             </div>
-            <div class="large"><img class="jumbo" src="img/jumbo.png" alt=""></div>
+            <div class="large"><img class="jumbo-img" src="img/jumbo.png" alt=""></div>
 
         </div>
 
     </div>
     <!-- sezione trova il business -->
-<a name="plain"></a>
+    <a name="plain"></a>
     <div class="small-container">
         <h2>Trova il piano business che fa per te</h2>
+        <div class="info">
+            <span id="monthly">
+                <div id="checked"></div>
+                <strong>Fatturazione mensile</strong>
+            </span>
+
+            <span id="annual">
+                <div id="not-checked"></div>
+                <strong> Fatturazione annuale</strong>
+            </span>
+
+        </div>
+
         <div class="flex-container flex-between flex-wrap">
 
 
@@ -83,9 +92,9 @@
 
                 <hr>
                 <div class="info">
-                    <h3 >Professional</h3>
+                    <h3>Professional</h3>
 
-                    <div >&euro;12.00 <br><span class="frequency">/mese</span></div>
+                    <div>&euro;12.00 <br><span class="frequency">/mese</span></div>
 
                     <div>
                         <ul class="fa-ul">
@@ -98,15 +107,17 @@
 
                         <div class="btn-info"><a class="goto btn" href="#">Prova gratis per 30 giorni</a></div>
 
-                        <div class="info">oppure <a href="#">Acquista ora</a></div>
+                        <div class="info">oppure <a id="now" id="now" href="#">Acquista ora</a></div>
 
                         <hr class="short">
 
                         <div><strong>Punti salenti del piano</strong></div>
 
                         <ul class="fa-ul">
-                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Invia file fino a 100 GB con Dropbox Transfer</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Cartelle offline su dispositivi mobili</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Invia file fino a 100 GB con
+                                Dropbox Transfer</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Cartelle offline su
+                                dispositivi mobili</li>
                         </ul>
                     </div>
                 </div>
@@ -117,32 +128,38 @@
 
                 <hr>
                 <div class="info">
-                    <h3 >Advanced</h3>
+                    <h3>Advanced</h3>
 
-                    <div >&euro;18.00 <br><span class="frequency">/utente/mese</span></div>
+                    <div>&euro;18.00 <br><span class="frequency">/utente/mese</span></div>
 
                     <div>
                         <ul class="fa-ul">
                             <li><span class="fa-li"><i class="fa-solid fa-user"></i></span>3 o più utenti</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-box-archive"></i></span>Tutto lo spazio di cui ha bisogno il tuo team</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-box-archive"></i></span>Tutto lo spazio di cui
+                                ha bisogno il tuo team</li>
                             <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></i></span>Funzioni di
                                 produttività premium e condivisione semplice e sicura</li>
                         </ul>
 
                         <div class="btn-info"><a class="goto btn" href="#">Prova gratis per 30 giorni</a></div>
 
-                        <div >oppure <a href="#">Acquista ora</a></div>
+                        <div>oppure <a id="now" href="#">Acquista ora</a></div>
 
                         <hr class="short">
 
-                        <div ><strong>Punti salenti del piano</strong></div>
+                        <div><strong>Punti salenti del piano</strong></div>
 
                         <ul class="fa-ul">
-                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Nessun limite di spazio per i file</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Cartelle offline su dispositivi mobili</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></i></span>Risparmio del 50% rispetto alle iscrizioni singole</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Possibilità di inserire nuovi membri del team</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Gestione dei permessi in base ai ruoli</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Nessun limite di spazio per
+                                i file</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Cartelle offline su
+                                dispositivi mobili</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></i></span>Risparmio del 50%
+                                rispetto alle iscrizioni singole</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Possibilità di inserire
+                                nuovi membri del team</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Gestione dei permessi in
+                                base ai ruoli</li>
                         </ul>
                     </div>
                 </div>
@@ -153,29 +170,34 @@
 
                 <hr>
                 <div class="info">
-                    <h3 >Enterprise</h3>
+                    <h3>Enterprise</h3>
 
-                    <div >&euro;Contattaci <br><span class="frequency">-</span></div>
+                    <div>Contattaci <br><span class="frequency">-</span></div>
 
                     <div>
                         <ul class="fa-ul">
                             <li><span class="fa-li"><i class="fa-solid fa-user"></i></span>10 o più utenti</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-box-archive"></i></span>Soluzioni personalizzabili per la tua azienda</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></i></span>assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-box-archive"></i></span>Soluzioni
+                                personalizzabili per la tua azienda</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></i></span>assistenza
+                                personalizzata per aiutare gli amministratori</li>
                         </ul>
 
-                        <div class="btn-info"><a class="goto btn" href="#">Prova gratis per 30 giorni</a></div>
+                        <div class="btn-info"><a class="goto btn" href="#">Conttattaci</a></div>
 
-                        <div >oppure <a href="#">Acquista ora</a></div>
+                        <div>oppure <a id="now" href="#">Acquista ora</a></div>
 
                         <hr class="short">
 
-                        <div ><strong>Punti salenti del piano</strong></div>
+                        <div><strong>Punti salenti del piano</strong></div>
 
                         <ul class="fa-ul">
-                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Cartelle offline su dispositivi mobili</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Servizio assistenza 24/h</li>
-                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></i></span>Possibilità di personalizzazione totale</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Cartelle offline su
+                                dispositivi mobili</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Servizio assistenza 24/h
+                            </li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></i></span>Possibilità di
+                                personalizzazione totale</li>
                         </ul>
                     </div>
                 </div>
@@ -189,16 +211,17 @@
                 <div class="flex-container">
                     <div class="large w-60">
                         <div class="info">
-                        <h3>Enterprise</h3>
-                        <p><strong> Contatta l'ufficio vendite per i prezzi</strong></p>
+                            <h3>Enterprise</h3>
+                            <p class="content"><strong> Contatta l'ufficio vendite per i prezzi</strong></p>
 
-                        <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT
-                            nella gestione
-                            su qualsiasi scala</p>
+                            <p class="content">Soluzioni personalizzate e supporto su misura per aiutare i
+                                professionisti IT
+                                nella gestione
+                                su qualsiasi scala</p>
                         </div>
                     </div>
                     <div class="small">
-                        <div><a class="goto btn" href="#">Contatta l'ufficio vendite</a></div>
+                        <div class="btn-info"><a class="goto btn" href="#">Contatta l'ufficio vendite</a></div>
                     </div>
                 </div>
             </div>
@@ -223,7 +246,7 @@
                 nihil quis omnis eveniet!
             </div>
 
-            <div class="content"><a class="goto btn" id="partner" href="#">Trova un partner</a></div>
+            <div class="content btn-info"><a class="goto btn" id="partner" href="#">Trova un partner</a></div>
 
         </div>
 
@@ -317,7 +340,7 @@
     <div class="small-container">
         <h2>Più di 500.000 team utilizzano <br>Dropbox Business</h2>
 
-        <div><a href="#">Scopri di più sui nostri clienti</a></div>
+        <div><a class="w-50" href="#">Scopri di più sui nostri clienti</a></div>
     </div>
     <!-- sezione quadratini colorati -->
 
@@ -421,7 +444,7 @@
                 </ul>
             </div>
             <div>
-                <h4>Dropbox</h4>
+                <h4>Azienda</h4>
 
                 <ul class="footer-menu">
                     <li><a class="info-footer" href="#">Applicazione desktop</a></li>
@@ -432,7 +455,7 @@
                 </ul>
             </div>
             <div>
-                <h4>Dropbox</h4>
+                <h4>Prodotti</h4>
 
                 <ul class="footer-menu">
                     <li><a class="info-footer" href="#">Applicazione desktop</a></li>
@@ -443,7 +466,7 @@
                 </ul>
             </div>
             <div>
-                <h4>Dropbox</h4>
+                <h4>Supporto</h4>
 
                 <ul class="footer-menu">
                     <li><a class="info-footer" href="#">Applicazione desktop</a></li>
@@ -454,7 +477,7 @@
                 </ul>
             </div>
             <div>
-                <h4>Dropbox</h4>
+                <h4>Community</h4>
 
                 <ul class="footer-menu">
                     <li><a class="info-footer" href="#">Applicazione desktop</a></li>
@@ -464,6 +487,11 @@
                     <li><a class="info-footer" href="#">Funzioni</a></li>
                 </ul>
             </div>
+
+        </div>
+        <div class="w-60">
+            <hr class="short">
+            <div style="color: white"><i class="fa-solid fa-earth-americas"></i> italiano</div>
         </div>
     </footer>
 
