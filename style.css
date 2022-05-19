@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,32 +6,39 @@
 
 }
 
-h1{
-text-align: center;
-font-size: 70px;
-padding-bottom: 15px;
-padding-top: 50px;
-width: 80%;
-margin: 0 auto;
+h1 {
+    text-align: center;
+    font-size: 70px;
+    padding-bottom: 15px;
+    padding-top: 50px;
+    width: 80%;
+    margin: 0 auto;
 }
 
-h2{
+h2 {
     text-align: left;
     margin-top: 100px;
     margin-bottom: 20px;
     font-size: 40px;
-
 }
 
-h3{
-margin-bottom: 15px;
+h3 {
+    margin-bottom: 15px;
 }
-a{
+
+h4 {
+    color: white;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 35px;
+}
+
+a {
     display: block;
 }
 
 /* menu iniziale nell'header */
-header{
+header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -41,37 +48,21 @@ header{
     background-color: white;
     height: 70px;
 }
-#start{
+
+#start {
     color: white;
 }
-#logo{
+
+#logo {
     height: 18px;
 }
-#now{
+
+#now {
     display: inline;
 }
-#anchor{
+
+#anchor {
     font-size: 45px;
-}
-
-#checked{
-    vertical-align: middle;
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: 4px solid black;
-    border-color: #0061ff;
-}
-
-#not-checked{
-    vertical-align: middle;
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: 1px solid gray;
-    
 }
 
 ul.menu {
@@ -80,10 +71,12 @@ ul.menu {
     display: flex;
     align-items: baseline;
 }
-ul.menu li { 
+
+ul.menu li {
     margin: 2px;
     padding: 20px;
 }
+
 ul.menu li .a-menu {
     color: black;
     display: block;
@@ -95,75 +88,54 @@ ul.menu li:hover {
     border-bottom: 2px solid black;
 }
 
-.goto{
-    background-color:rgb(20,83,246);
+/* bottoni e vari */
+.goto {
+    background-color: rgb(20, 83, 246);
     color: white;
     padding: 8px;
-    text-decoration:none ;
+    text-decoration: none;
 }
 
-.btn .goto{
+.btn .goto {
     text-align: center;
     margin-top: 20px;
     text-align: center;
 }
-.btn-info{
+
+.btn-info {
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
-#partner{
+
+#partner {
     color: black;
     background-color: white;
     border: 2px solid lightgrey;
     width: 50%;
 }
-/* prima sezione forse conviene mettere il testo in float e l'immagine in absolute prova */
-.big-container{
-    background-color: lightblue;
-    padding: 40px;
-}
 
-.small-container{
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 50px;
-    max-width: 1000px;
-
-}
-    
-.short{
-    width: 20%;
-    margin-bottom: 25px;
-    margin-top: 25px;
-}
-.start{
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
-    bottom: -70px;
-}
 
 /* proprietà flex */
-.flex-container{
+.flex-container {
     display: flex;
-    
+
 }
 
-.flex-wrap{
+.flex-wrap {
     flex-wrap: wrap;
 }
 
-.flex-between{
+.flex-between {
     justify-content: space-between;
 }
 
-.flex-center{
+.flex-center {
     justify-content: center;
 }
 
-.small{
+.small {
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -171,37 +143,41 @@ ul.menu li:hover {
     justify-content: space-between;
 }
 
-.content{
+.content {
     margin-top: 25px;
 }
 
-.large{
+.large {
     flex-grow: 2;
 }
 
+/* sezione immagini */
 
-.jumbo-img{
+/* immagine jumbotron */
+.jumbo-img {
     height: 400px;
 }
 
-.partner-img{
+/* immagine partner-box */
+.partner-img {
     height: 400px;
 }
 
+/* immagini sezione dei 6 box in flex */
 .card-img {
-	display: block;
-	border: 0;
-	width: 100%;
-	height: auto;
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
 }
-.fa-check{
-    color: blue;
-}
+
+
+/* immagini degli sponsor sezioni quadrati */
 .sponsor-img {
     filter: grayscale(1) invert(1);
-	display: block;
-	border: 0;
-	margin: 0 auto;
+    display: block;
+    border: 0;
+    margin: 0 auto;
     width: 80%;
     position: absolute;
     top: 50%;
@@ -209,222 +185,260 @@ ul.menu li:hover {
     transform: translate(-50%, -50%);
 }
 
-#sponsor-img{
-width: 60%;
+/* sezione width riutilizzabili */
+
+#sponsor-img {
+    width: 60%;
 }
 
-.w-3{
+.w-3 {
     width: calc(100%/ 3 - 10px - 10px);
 }
 
-.w-3s{
+.w-3s {
     width: calc(100%/ 3);
 }
 
-
-
-
-
-.w-2{
+.w-2 {
     width: calc(100%/ 2 - 10px - 10px);
 }
 
-.w-100{
+.w-100 {
     width: 100%;
     margin-top: 50px;
 }
 
-.w-60{
+.w-60 {
     width: 60%;
     margin: 0 auto;
 }
 
-.w-50{
+.w-50 {
     width: 50%;
 }
 
+/* prima sezione forse conviene mettere il testo in float e l'immagine in absolute prova */
+.big-container {
+    background-color: lightblue;
+    padding: 40px;
+}
 
-.vertical-box{
-    border: 2px solid rgb(215, 213, 213);
-    height: 900px;
-    margin: 10px;
+.small-container {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
     max-width: 1000px;
 
 }
 
-.horizontal-box{
+.short {
+    width: 20%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.start {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    bottom: -70px;
+}
+
+/* due bottoni non cliccabili sezione prezzi */
+#checked {
+    vertical-align: middle;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 4px solid black;
+    border-color: #0061ff;
+}
+
+#not-checked {
+    vertical-align: middle;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+/* sezione dei box sui piani */
+.vertical-box {
+    border: 2px solid rgb(215, 213, 213);
+    height: 900px;
+    margin: 10px;
+    max-width: 1000px;
+}
+
+.horizontal-box {
     border: 2px solid rgb(215, 213, 213);
     height: 200px;
     width: 100%;
     margin: 10px;
     max-width: 1000px;
-
 }
 
-.whom{
+.whom {
     text-align: center;
     padding: 10px;
 }
 
-.info{
+.info {
     padding: 10px;
-   
 }
 
-
-
-.fa-ul{
+.fa-ul {
     margin-top: 20px;
 }
 
-.fa-ul>li{
+.fa-ul>li {
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
+.fa-check {
+    color: blue;
+}
 
-.small-square{
+/* css dei quadrati colorati */
+.small-square {
     background-color: white;
     display: block;
     width: 50%;
-    height:50%;
+    height: 50%;
     position: relative;
     max-width: 1000px;
 
 }
 
-.small-square:hover{
+.small-square:hover {
     display: block;
     border: 10px solid lightgray;
 }
-.side-box{
+
+.side-box {
     height: calc(100vw / 3);
     max-width: 1000px;
-
-
-   
 }
 
-.center-square{
+.center-square {
     height: calc(100vw / 3);
     background-color: beige;
     padding: 30px;
     max-width: 1000px;
-    
-
 }
 
-#wbr{
+/* sezione colore sfondi */
+#wbr {
     background-color: aquamarine;
 }
 
-#hrst{
+#hrst {
     background-color: lightblue;
 }
 
-#plnt{
+#plnt {
     background-color: red;
 }
 
-#clr{
+#clr {
     background-color: lightseagreen;
 }
 
-#dsgn{
+#dsgn {
     background-color: blue;
 }
 
-#arzn{
+#arzn {
     background-color: brown;
 }
 
-#flrd{
+#flrd {
     background-color: orange;
 }
 
-#tpp{
+#tpp {
     background-color: lightcoral;
 }
 
-.bg-azure{
+.bg-azure {
     background-color: lightblue;
     height: 200px;
 }
 
-.trial{
+
+/* distanziamento dai quadrati colorati */
+.trial {
     margin-top: 100px;
 }
 
+/* sezione FAQ */
 
-.faq{
+.faq {
     padding-top: 50px;
 }
 
-.faq-box{
+.faq-box {
     position: relative;
 }
-.faq h3{
+
+.faq h3 {
     margin-bottom: 30px;
     font-size: 30px;
-    
+
 }
-.faq-box h5{
+
+.faq-box h5 {
     padding: 30px 0;
 }
-.faq-box .fas{
+
+.faq-box .fas {
     position: absolute;
     top: 30px;
     right: 0;
 }
 
-.faq-box p{
+.faq-box p {
     display: none;
     padding-bottom: 20px;
 }
 
-.faq-box:hover p{
+.faq-box:hover p {
     display: block;
 }
 
-
-footer{
+/* sezione footer */
+footer {
     margin-top: 100px;
     background-color: black;
     height: 400px;
-    
-
 }
-.info-footer a{
+
+.info-footer a {
     text-decoration: none;
 }
 
-
-ul.footer-menu{
+ul.footer-menu {
     font-size: 15px;
     list-style: none;
 }
+
 ul.footer-menu li {
-    
     display: block;
     padding: 10px;
-    
-   
 }
 
 ul.footer-menu li .info-footer {
-    color:white;
+    color: white;
     display: block;
     text-decoration: none;
     text-align: left;
     margin-left: 0;
 }
 
-h4{
-    color: white;
-    margin-top: 50px;
-    margin-left: 10px;
-    margin-bottom: 35px;
-}
+
 
 
 
